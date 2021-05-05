@@ -1,6 +1,5 @@
 // Dependencies
 const express = require('express');
-// Import express-handlebars
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({});
 const path = require('path');
@@ -14,8 +13,7 @@ const PORT = process.env.PORT || 3001;
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
-// uncomment when routes are built
-// app.use(require('./controllers/'));
+app.use(require('./controllers'));
 
   
 
