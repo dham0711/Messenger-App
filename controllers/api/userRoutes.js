@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const  User  = require('../../models/User');
+const { User } = require('../../models/user');
 
 // This route uses async/await with '.catch()' for errors
 
 router.get('/', async (req, res) => {
-  // find all categories
+  // find all users
   
   try {
 
@@ -20,19 +20,16 @@ router.get('/', async (req, res) => {
 
 });
 
-// This route uses async/await with try/catch for errors
-
 router.post('/', async (req, res) => {
+  console.log(req)
   try {
-    const UserData = await User.create({
-      username: req.body.username,
-      email: req.body.email,
-      password: req.body.password,
-    });
+    console.log("got inside of try")
 
+    const userData = await User.create(req.body);
+    res.status(200).json(userData);
   } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
+    console.log(err)
+    res.status(400).json(err);
   }
 });
 
