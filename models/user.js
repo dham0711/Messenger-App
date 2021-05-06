@@ -16,14 +16,15 @@ User.init(
       
       allowNull: false,
   
-      validate: {
-        isAlphanumeric: true,
-      },
+      // validate: {
+      //   isAlphanumeric: true,
+      // },
     },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
+
       validate: {
         isEmail: true,
       },
@@ -46,4 +47,4 @@ User.init(
   }
 );
 
-module.exports =  User ;
+module.exports = { User };
