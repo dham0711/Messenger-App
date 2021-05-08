@@ -23,7 +23,6 @@ app.use(require('./controllers'));
 //sockit.io start
 
 app.get('/', (req, res) => {
-  // res.sendFile(__dirname + '/test/index.html');
   res.render("index.handlebars")
 });
 
