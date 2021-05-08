@@ -23,7 +23,8 @@ app.use(require('./controllers'));
 //sockit.io start
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/test/index.html');
+  // res.sendFile(__dirname + '/test/index.html');
+  res.render("index.handlebars")
 });
 
 io.on('connection', (socket) => {
