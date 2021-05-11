@@ -2,4 +2,117 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 62.5%;
+}
+/* header */
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+    font-size: 12em;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* main showcase after loggin */
+
+.showcase {
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+    justify-content: center; 
+    overflow: scroll;
+}
+
+.message-board {
+    margin-left: 4rem;
+    overflow: scroll;
+}
+
+.message-board, .question {
+    padding: 1rem;
+}
+
+.question {
+    /* border: black solid .2rem; */
+    border-radius: 3%;
+    height: 60rem;
+}
+
+.message-board, .question h1 {
+    font-size: 6em;
+    padding: 1.5rem;
+
+}
+
+.message-board, .question p {
+    font-size: 3em;
+}
+
+.comment {
+    margin: 6rem;
+    
+    padding: 3rem;
+    font-size: 3em;
+    border: black solid .2rem;
+    border-radius: 3%;
+}
+
+.comment h2 {
+    font-size: 1em;
+}
+
+.comment p {
+    font-size: .7em;
+}
+
+
+/* area where messages are sent */
+.chatbox {
+    height: 65rem;
+    width: 40rem;
+    margin-left: 10rem;
+    overflow: scroll;
+    border: rgba(138, 138, 138, 0.767) .2rem solid;
+    border-radius: 2%;
+}
+
+.chatbox, .chat-message {
+    font-size: 3rem;
+    padding: 1rem;
+    
+}
+
+.chat-input {
+    width: 40rem;
+    height: 4rem;
+    position: relative;
+    top: 78rem;
+    left: 67.5rem;
+}
+
+.chat-input input {
+    height: 2.1rem;
 }
