@@ -3,9 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
+    background-color: rgba(247, 247, 247, 0.911);
+    
 }
-/* header */
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 20em;
+}
+
+/* header */
 
 nav {
     display: flex;
@@ -14,28 +25,28 @@ nav {
     min-height: 8vh;
     background-color: var(--background-color);
     font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
 }
 
-.nav-links {
+/* homepage */
+
+.post a {
+    font-size: 3rem;
+}
+
+.post {
+    font-size: 4rem;
     display: flex;
-    justify-content: space-around;
-    width: 30%;
+    margin: .5rem;
+    padding: 2rem;
 }
 
-.nav-links li {
-    list-style: none;
-    font-size: 12em;
+.card {
+    outline: black solid .2rem;
 }
 
-.nav-links a {
-    color: var(--text-color);
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-}
 
-/* main showcase after loggin */
+/* Dashboard */
 
 .showcase {
     margin: 4rem;
@@ -47,7 +58,7 @@ nav {
 }
 
 .message-board {
-    margin-left: 4rem;
+    margin-left: 10rem;
     overflow: scroll;
 }
 
@@ -62,13 +73,13 @@ nav {
 }
 
 .message-board, .question h1 {
-    font-size: 6em;
+    font-size: 6rem;
     padding: 1.5rem;
 
 }
 
 .message-board, .question p {
-    font-size: 3em;
+    font-size: 1.8rem;
 }
 
 .comment {
@@ -115,4 +126,15 @@ nav {
 
 .chat-input input {
     height: 2.1rem;
+}
+
+
+/* Utilities */
+
+.new-post-btn {
+
+    height: 2rem;
+    width: 3rem;
+    border-radius: 3%;
+
 }
