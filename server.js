@@ -26,6 +26,9 @@ app.get('/', (req, res) => {
   res.render("index.handlebars")
 });
 
+app.get("/login",(req,res)=>{
+  res.render("login.handlebars")
+})
 io.on('connection', (socket) => {
 
         console.log('a user connected');

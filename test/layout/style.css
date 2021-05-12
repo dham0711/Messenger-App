@@ -200,3 +200,12 @@ h2::after {
   text-align: center;
   content: "my name is bob";
 }
+
+.messages {
+  overflow-y: scroll;
+}
+
+body {
+  background-image: "https://www.paintingmania.com/arts/claude-monet/large/effect-spring-giverny-7_11600.jpg?version=11.11.20";
+
+}
