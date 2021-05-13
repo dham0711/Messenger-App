@@ -51,23 +51,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-// io.on('connection', (socket) => {
+io.on('connection', (socket) => {
 
-//         console.log('a user connected');
+    console.log('a user connected');
 
-//     socket.on('disconnect', () => {
-//         console.log('user disconnected');
-//     });
+  socket.on('disconnect', () => {
+      console.log('user disconnected');
+  });
 
-//     socket.on('chat message', (msg) => {
-//         console.log('message: ' + msg);
-//     });
+  socket.on('chat message', (msg) => {
+    console.log('message: ' + msg);
+  });
 
 
-//     socket.on('chat message', (msg) => {
-//         io.emit('chat message', msg);
-//     });
-// });
+  socket.on('chat message', (msg) => {
+    io.emit('chat message', msg);
+  });
+});
 
 // set Handlebars as the default template engine
 app.engine('handlebars', hbs.engine);
