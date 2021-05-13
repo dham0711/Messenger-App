@@ -42,29 +42,30 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-
 // app.get('/', (req, res) => {
-//   // res.sendFile(__dirname + '/test/index.html');
-//   res.render("homepage.handlebars")
+//     res.sendFile(__dirname + 'dashboard.handlebars');
+//      res.render("homepage.handlebars")
 // });
 
-io.on('connection', (socket) => {
-
-        console.log('a user connected');
-
-    socket.on('disconnect', () => {
-        console.log('user disconnected');
-    });
-
-    socket.on('chat message', (msg) => {
-        console.log('message: ' + msg);
-    });
 
 
-    socket.on('chat message', (msg) => {
-        io.emit('chat message', msg);
-    });
-});
+// io.on('connection', (socket) => {
+
+//         console.log('a user connected');
+
+//     socket.on('disconnect', () => {
+//         console.log('user disconnected');
+//     });
+
+//     socket.on('chat message', (msg) => {
+//         console.log('message: ' + msg);
+//     });
+
+
+//     socket.on('chat message', (msg) => {
+//         io.emit('chat message', msg);
+//     });
+// });
 
 // set Handlebars as the default template engine
 app.engine('handlebars', hbs.engine);
@@ -76,5 +77,5 @@ app.use(routes);
 
 // turn on connection to db and server
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  app.listen(PORT, () => console.log('Now listening on: ' + PORT));
 });
