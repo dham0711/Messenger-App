@@ -1,21 +1,10 @@
-{{#if posts.length}}
-<section>
-  <h2>Your Posts</h2>
-    {{#each posts as |post|}}
-      {{> dashboard-postinfo post}}
-      {{!-- <a href="/dashboard/edit/{{post.id}}">Edit post</a> --}}
-    {{/each}}
 
-</section>
-{{/if}}
-
-<button class="btn new-post-btn" type="submit" class="btn"><a class="link" href="/dashboard/new">+ New Post</a></button>
 
 <div class="showcase">
 
     <div class="message-board">
 
-        {{!-- question build --}}
+        
         <div class="question">
             <h1>this is a question</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eum explicabo vero quia tempore quis alias suscipit aperiam earum corrupti nihil neque, aliquid ullam deserunt culpa nulla dolor, dignissimos natus odio consequatur temporibus? Suscipit eum delectus fugit vitae! Molestiae cumque consequuntur error! Dolore blanditiis a aliquam provident velit alias repellat eos repudiandae rem doloribus sequi eum consequuntur reiciendis, recusandae ratione nobis modi quae porro ipsam repellendus ab inventore exercitationem tempore magni. Sint neque maiores doloremque ducimus ratione? Ducimus doloribus iste nisi veniam, aliquid nesciunt natus esse incidunt neque velit. Qui, nihil unde. Rem minima sit.</p>
@@ -46,19 +35,36 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ducimus, dicta provident possimus fuga odio saepe eum dolores velit iste beatae dolorem ipsam autem! Debitis, veritatis rerum? Vitae odit saepe magni quam illum corporis, odio id corrupti ea neque veritatis ratione repudiandae quas eum ducimus qui sit voluptate numquam a explicabo eveniet? Minus, iure doloribus suscipit vitae reiciendis illum pariatur. Harum reprehenderit similique maxime quis exercitationem doloribus optio obcaecati facilis porro quos, assumenda adipisci ipsum dolore ipsa animi aut iusto.</p>
             
             </div>
-            
         </div>
         
+        
     </div>
-
-    {{!-- message area --}}
     <div class="chatbox">
         <ul class="chat-message" id="messages"></ul>
-        <form class="chat-input" id="form" action="" style="left: 654px; margin-top: 12px;">
+        <form class="chat-input" id="form" action="">
             <input id="input" autocomplete="off" /><button>Send</button>
         </form>
+    </div>  
+
+    <div class="btn-holder">
+        <button class="question-btn" type="submit" class="btn"><a class="link" href="/dashboard/new"> ask a new question</a></button>
+    </div>
+
+    <div class="prev-posts">
+        {{#if posts.length}}
+        <section class="old-posts">
+        <h2>your questions</h2>
+        {{#each posts as |post|}}
+      {{> dashboard-postinfo post}}
+      {{!-- <a href="/dashboard/edit/{{post.id}}">Edit post</a> --}}
+        {{/each}}
+
+        </section>
+        {{/if}} 
     </div>
 </div>
+
+
 
 
 
