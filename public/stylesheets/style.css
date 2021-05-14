@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
-    background-color: rgba(247, 247, 247, 0.911);
+    background-color: rgba(255, 255, 255, 0.911);
+    font-family: Poppins;
     
 }
 
@@ -40,20 +41,84 @@ nav {
 
 /* HOMEPAGE */
 
-.post a {
+
+.intro-showcase {
+    margin: 10rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.intro-showcase img {
+    width: 95%;
+}
+
+.intro-text {
+    margin-left: 2rem;
+}
+
+.intro-text h1 {
+    font-size: 5rem;
+    
+}
+
+.intro-text p {
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+.intro-text-two {
+    margin-top: 5rem;
+    text-align: center;
+    width: 90%;
+}
+
+.intro-text-two h1 {
+    font-size: 5rem;
+}
+
+.intro-text-two p {
+    font-size: 2.5rem;
+}
+
+.homepage-post {
+    font-size: 4rem;
+    margin: .5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding: 2rem;
+    border: #536dfe94 .3rem solid;
+    border-radius: 1.5rem;
+    overflow: scroll;
+    height: 30rem;
+}
+
+.homepage-post a {
     font-size: 3rem;
 }
 
-.post {
-    font-size: 4rem;
-    display: flex;
-    margin: .5rem;
-    padding: 2rem;
+.homepage-post p {
+    font-size: 1.5rem;
+    padding: .5rem;
 }
 
-.card {
-    outline: black solid .2rem;
+.post-card {
+    
+    border: solid rgba(0, 0, 0, 0.15) .2rem;
+    border-radius: 1.2rem;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.post-display {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+
+
+
+
 
 
 /* DASHBOARD */
@@ -355,7 +420,57 @@ nav {
 }
 
 
-/* Utilities */
+/* FOOTER */
+
+footer {
+    margin-top: 10rem;
+    
+    background-color: #536dfe94;
+    color: white;
+}
+
+.footer-text {
+    padding: 1rem;
+    font-size: 5rem;
+    background-color: #536dfe94;
+}
+
+.footer-text h2 {
+    background-color: #536dfe94;
+}
+
+.footer-nav {
+    padding: 1rem;
+    font-size: 2.5rem;
+    background-color: #536dfe94;
+}
+
+.footer-nav a {
+    background-color: #536dfe94;
+}
+
+.contact {
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: #536dfe94;
+}
+
+.contact h2 {
+    background-color: #536dfe94;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #536dfe94;
+}
+
+.last-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #536dfe94;
+}
+/* UTILITIES */
 
 .new-post-btn {
 
@@ -366,4 +481,21 @@ nav {
     font-size: 1.5rem;
     border: solid black .2rem;
     border-radius: 3%;
+}
+
+.signup-btn-home {
+    margin: 1rem;
+    height: 4rem;
+    width: 25rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: solid rgb(228, 225, 225) .1rem;
+    background-color: rgb(82, 72, 228);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.signup-btn-home a {
+    background-color: rgb(82, 72, 228);
+    color: cornsilk;
+    font-size: 2rem;
 }

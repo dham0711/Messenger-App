@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>study room | a place to learn</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 
 <body>
   <div class="wrapper">
       <header class="hero">
+        
             <nav class="nav">
+              <h2>study room.</h2>
                     <a class="link" href="/">home</a>
                     <a class="link" href="/dashboard">dashboard</a>
                     {{#if loggedIn}}
@@ -20,7 +23,7 @@
                     <a class="link" href="/login">login</a>
                     {{/if}}
             </nav>          
-          <h1 class="app-title"><i class="fab "></i>study room.</h1>
+          <h1 class="app-title"><i class="fab "></i></h1>
       </header>
 
     <main>
@@ -28,9 +31,38 @@
     </main>
   </div>
 
-    {{#if loggedIn}}
+  {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
-    {{/if}}
+  {{/if}}
+
+  <footer>
+
+    <div class="footer-grid">
+      <div class="footer-text">
+        <h2>studyroom.</h2>
+      </div>
+
+      <div class="footer-nav last-grid">
+        <a class="link" href="/">home</a>
+          <a class="link" href="/dashboard">dashboard</a>
+              {{#if loggedIn}}
+          <a class="link" href="/" id="logout">logout</a>
+              {{else}}
+        <a class="link" href="/login">login</a>
+              {{/if}}
+      </div>
+
+      <div class="contact last-grid">
+        <h2>call: 555-555-5555</h2>
+        <h2>email: emailus@studyroom.com</h2>
+        <h2></h2>
+      </div>
+    </div>
+    
+    
+                    
+       
+  </footer>
 
 </body>
 
