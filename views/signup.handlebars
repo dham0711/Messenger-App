@@ -1,17 +1,22 @@
-  <div class="card">
-      <h3 class="card-header">Sign Up</h3>
-      <form id="signup-form" class="card-body">
-        <label for="username-signup" class="form-label">Username</label>
-        <input id="username-signup" type="text" class="form-input" />
+<div class="signup-showcase">
+  <img src="signup.svg" alt="">
+  <div class="signup-card">
+    {{!-- <h3 class="card-header">Sign Up</h3> --}}
+    <form class="signup-form" id="signup-form" class="card-body">
+      <p>welcome to studyroom, where small questions lead to big discoveries!</p>
+      <label class="user-signup" for="username-signup" class="form-label">username</label>
+      <input id="username-signup" type="text" class="form-input" />
 
 
-        <label class="form-label" for="password-signup">Password</label>
-        <input  id="password-signup" type="password" class="form-input" />
+      <label class="form-label password-signup" for="password-signup">password</label>
+      <input  id="password-signup" type="password" class="form-input" />
 
-        <button type="submit" class="btn">Signup!</button>
-        <a class="login-link" href="/login">Log in instead</a>
-      </form>
-    </div>
+      <button class="signup-btn" type="submit" class="btn"><a href="">signup</a></button>
+      <a class="login-link" href="/login">back to login</a>
+    </form>
+  </div>
+</div>
+
 
 <!-- javascript file-->
 <script src="/javascript/signup.js"></script>
