@@ -38,7 +38,7 @@ nav {
     font-size: 3rem;
 }
 
-/* homepage */
+/* HOMEPAGE */
 
 .post a {
     font-size: 3rem;
@@ -56,7 +56,7 @@ nav {
 }
 
 
-/* Dashboard */
+/* DASHBOARD */
 
 .showcase {
     margin: 4rem;
@@ -110,7 +110,7 @@ nav {
 }
 
 
-/* area where messages are sent */
+/* CHAT BOX */
 .chatbox {
     height: 60rem;
     width: 40rem;
@@ -137,6 +137,114 @@ nav {
 .chat-input input {
     height: 2.1rem;
 }
+
+/* SIGN UP */
+.signup-showcase {
+    font-family: Poppins;
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.signup-showcase img {
+    height: 50rem;
+}
+
+.signup-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+    
+}
+
+.signup-card p {
+    font-size: 3rem;
+    
+}
+
+.signup-form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(236, 229, 229, 0.884);
+    position: relative;
+    height: 45rem;
+    bottom: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.signup-form p {
+    font-size: 1.3rem;
+    background-color: rgba(236, 229, 229, 0.884);
+    font-style: italic;
+    padding: 1rem;
+
+}
+
+.signup-form label {
+    background-color: rgba(236, 229, 229, 0.884);
+}
+
+.signup-form input {
+    background-color: rgba(236, 229, 229, 0.884);
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    left: 7rem;
+}
+
+.user-signup {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.password-signup {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+.signup-btn {
+    margin: 1rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: solid rgb(228, 225, 225) .1rem;
+    background-color: rgb(82, 72, 228);
+}
+
+.signup-btn a {
+    background-color: rgb(82, 72, 228);
+    color: cornsilk;
+    font-size: 2rem;
+}
+
+
+
+.signup-input {
+    font-size: 2.5rem;
+    height: 3rem;
+    width: 25rem;
+}
+
+.login-link {
+    font-size: 1.5rem;
+    display: block;
+    position: relative;
+    left: 6rem;
+    width: 13rem;
+    background-color: rgba(236, 229, 229, 0.884)
+}
+
 
 /* LOGIN */
 
