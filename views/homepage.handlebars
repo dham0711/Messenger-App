@@ -1,7 +1,23 @@
-<article class="post">
+<div class="intro-showcase">
+    <div class="intro-text">
+        <h1>hello, and welcome to studyroom.</h1>
+        <p>a place where every question is welcome, no matter how big or how small!</p>
+    </div>
+    <img src="homepage.svg" alt="">
+    <img src="second-home.svg" alt="">
+    <div class="intro-text-two">
+        <p>study room is a place that brings the question askers and question answerers together in one place.</p>
+        <p>click the button bellow to make an account today!</p>
+        <button class="signup-btn-home" type="submit" class="btn"><a href="/signup">signup</a></button>
+    </div>
+</div>
 
-    {{#each posts as |post| }}
-        {{> post-info post}}
-    {{/each}}
+<div class="post-display">
+    <section class="homepage-post">
 
-</article>
+        {{#each posts as |post| }}
+            {{> post-info post}}
+        {{/each}}
+
+    </section>
+</div>
