@@ -21,8 +21,8 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    font-size: 20em;
+.app-title {
+    font-size: 8rem;
 }
 
 /* header */
@@ -111,7 +111,7 @@ nav {
 
 /* area where messages are sent */
 .chatbox {
-    height: 65rem;
+    height: 60rem;
     width: 40rem;
     margin-left: 10rem;
     overflow: scroll;
@@ -135,6 +135,79 @@ nav {
 
 .chat-input input {
     height: 2.1rem;
+}
+
+/* LOGIN */
+
+
+.login-showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.login-showcase img {
+    height: 10rem;
+}
+
+.login-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+    border: solid black .2rem;
+    border-left: none;
+    border-top: none;
+    border-radius: .5rem;
+}
+
+.login-card h3 {
+    font-size: 3rem;
+    
+}
+
+.main-form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-login {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.password-login {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+.login-btn {
+    margin: 1rem;
+    height: 3rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: solid black .1rem;
+    
+}
+
+
+
+.form-input {
+    font-size: 2.5rem;
+    height: 3rem;
+    width: 20rem;
+}
+
+.login-link {
+    font-size: 1.5rem;
+    display: block;
+    position: relative;
+    left: 5rem;
+    width: 10rem;
 }
 
 
