@@ -43,11 +43,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-
-
-
-
-
 // app.get('/', (req, res) => {
 //     //  res.sendFile(__dirname + 'dashboard.handlebars');
 //       res.render("dashboard.handlebars")
