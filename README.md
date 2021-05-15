@@ -34,6 +34,7 @@ study room is an educational question and answer platform with instant messaging
     
 
 ## Preview
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/23666524/118375463-6aaf0700-b587-11eb-964b-dfec6b495214.gif)
 
    
 
