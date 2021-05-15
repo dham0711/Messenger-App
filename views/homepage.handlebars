@@ -21,3 +21,32 @@
 
     </section>
 </div>
+
+<footer>
+
+    <div class="footer-grid">
+      <div class="footer-text">
+        <h2>studyroom.</h2>
+      </div>
+
+      <div class="footer-nav last-grid">
+        <a class="link" href="/">home</a>
+          <a class="link" href="/dashboard">dashboard</a>
+              {{#if loggedIn}}
+          <a class="link" href="/" id="logout">logout</a>
+              {{else}}
+        <a class="link" href="/login">login</a>
+              {{/if}}
+      </div>
+
+      <div class="contact last-grid">
+        <h2>call: 555-555-5555</h2>
+        <h2>email: emailus@studyroom.com</h2>
+        <h2></h2>
+      </div>
+    </div>
+    
+    
+                    
+       
+  </footer>
