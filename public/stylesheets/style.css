@@ -102,7 +102,7 @@ nav {
     border: #536dfe94 .3rem solid;
     border-radius: 1.5rem;
     overflow: scroll;
-    height: 30rem;
+    height: 80rem;
 }
 
 .homepage-post a {
@@ -115,17 +115,16 @@ nav {
 }
 
 .post-card {
-    
     border: solid rgba(0, 0, 0, 0.15) .2rem;
     border-radius: 1.2rem;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 3rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .post-display {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    margin: .1rem;
     
 }
 
@@ -136,18 +135,25 @@ nav {
     margin: 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(60rem, 65rem);
     gap: .5rem;
     justify-content: center; 
     overflow: scroll;
+    
+    
 }
 
 .message-board {
-    margin-left: 10rem;
+    width: 53rem;
     overflow: scroll;
 }
 
 .message-board, .question {
     padding: 1rem;
+}
+
+.homepage-post-dash {
+    width: 50rem
 }
 
 .question {
@@ -174,6 +180,11 @@ nav {
 .old-posts h2 {
     font-size: 3rem;
 }
+
+.old-posts a {
+    font-size: 1.5rem;
+}
+
 
 
 
@@ -214,6 +225,40 @@ nav {
     border-left: none;
     border-right: none;
 }
+
+
+/* CREATE NEW MESSAGE */
+
+.message-showcase {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.new-post-form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.text-area {
+    resize: none;
+    padding: 1rem;
+}
+
+.message-title-input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+
+
+    
 
 
 /* SIGN UP */
@@ -564,9 +609,18 @@ footer {
     cursor: pointer;
 }
 
-/* .comment-btn {
+.new-msg-btn {
+    margin: 1rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    border: solid rgb(228, 225, 225) .1rem;
     background-color: rgb(82, 72, 228);
     color: cornsilk;
-    font-size: 1.5rem;
-    padding: 1rem;
-} */
+    padding: .5rem;
+    width: 20rem;
+}
+
+.new-msg-btn:hover {
+    cursor: pointer;
+}
