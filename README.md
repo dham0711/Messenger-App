@@ -1,22 +1,19 @@
 # study room | a place to learn
-` `  
+
 ## Table of Contents
 - [Description](#description)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Preview](#preview)
 - [Link](#link)
-- [Installation](#installation)
 - [License](#license)
 
-` `    
-` `    
+    
 
 ## Description
 study room is an educational question and answer platform with instant messaging capabilities. Designed for learners who seek fast and conversational support, study room’s sleek design intuitively connects question askers and question answerers.
 
-` `    
-` `     
+     
 
 ## Features
 - Secure sign up and log-in 
@@ -25,8 +22,7 @@ study room is an educational question and answer platform with instant messaging
 - Post commenting
 - Instant messaging to quickly address questions
 
-` `    
-` `    
+   
 
 ## Technologies Used
 - Socket io
@@ -35,25 +31,19 @@ study room is an educational question and answer platform with instant messaging
 - HTML
 - CSS
 
-` `    
-` `    
+    
 
 ## Preview
 
-` `    
-` `    
+   
 
 ## Link
 Deployed via Heroku: https://mysterious-meadow-15624.herokuapp.com/
 
-` `    
-` `    
+   
 
-## Installation
-### To install necessary dependencies, run the bellow command:
-
-` `    
-` `    
+   
 
 ## License
+MIT
 
