@@ -1,12 +1,13 @@
 {{> post-info post}}
 
 {{#if loggedIn}}
-<div class="card">
+<div class="card comment-showcase">
     <h3 class="card-header"></h3>
     <form class="card-body comment-form" id="comment-form">
 
-        <label class="form-label">Comment</label>
-        <input id="comment" name="comment-body" class="comment-box form-input" />
+        <label class="form-label" style="font-size: 2.5rem; margin-top: 2rem">help answer this question</label>
+        {{!-- <input id="comment" name="comment-body" class="comment-box form-input" /> --}}
+        <textarea id="comment" name="comment-body" class="comment-box form-input" style="outline: none; height: 30rem; width: 80rem; font-size: 1.5rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 1.5rem; border: rgba(138, 138, 138, 0.767) .2rem solid; margin-top: 3rem; margin-bottom-1rem"></textarea>
 
         <button type="submit" class="comment-btn btn">Submit</button>
     </form>
